@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZoomPlus</class>
+ <widget class="QMainWindow" name="ZoomPlus">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ZoomPlus</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="files.qrc">
+    <normaloff>:/icons/icons/favicon.ico</normaloff>:/icons/icons/favicon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #22222e;
+	font-family: 'Rubik', sans-serif;
+}
+
+QPushButton {
+	color: white;
+	background-color: #fb5b5d;
+	border-radius: 6px;
+	font-size: 16pt;
+	font-weight: 600;
+}
+
+QPushButton:pressed {
+	background-color: #fa4244;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_0">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_2">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+2</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_3">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+3</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_4">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+4</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_5">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+5</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_6">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+6</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_7">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+7</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_8">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+8</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_9">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+9</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_1">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+      <property name="shortcut">
+       <string>Alt+0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="open_urls"/>
+    <addaction name="open_names"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="open_urls">
+   <property name="text">
+    <string>Настроить ссылки</string>
+   </property>
+   <property name="statusTip">
+    <string>Настройка ссылок конференций</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="open_names">
+   <property name="text">
+    <string>Настроить названия конференций</string>
+   </property>
+   <property name="statusTip">
+    <string>Настройка названий конференций</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="files.qrc"/>
+ </resources>
+ <connections/>
+</ui>

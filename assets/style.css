@@ -1,0 +1,20 @@
+QMainWindow {
+	background-color: #22222e;
+}
+
+QLabel {
+	font-family: 'Rubik', sans-serif;
+	color: white;
+	font-size: 8pt;
+	font-weight: 600;
+}
+
+QLineEdit {
+	font-family: 'Rubik', sans-serif;
+	background-color: #22222e;
+	border: 2px solid #f66867;
+	border-radius: 6px;
+	color: white;
+	font-size: 8pt;
+	font-weight: 600;
+}
