@@ -1,1 +1,1 @@
-'# ZoomPlus - school project' 
+# ZoomPlus
