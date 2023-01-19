@@ -30,7 +30,7 @@ class UiZoomPlus(object):
                              "\n"
                              "QPushButton {\n"
                              "    color: white;\n"
-                             "    font-family: \'Rubik-Regular\', sans-serif;\n"
+                             "    font-family: Rubik, sans-serif;\n"
                              "    background-color: #fb5b5d;\n"
                              "    border-radius: 6px;\n"
                              "    font-size: 16pt;\n"

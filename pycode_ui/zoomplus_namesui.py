@@ -14,18 +14,21 @@ import qrc.files  # type: ignore
 
 
 class UiSettingsNames(object):
+    def __init__(self):
+        self.cfg = ZoomPlusConfig()
+
     def setup_ui(self, window):
         window.setObjectName("ZoomPlus")
-        window.resize(270, 400)
-        window.setMinimumSize(QtCore.QSize(270, 400))
-        window.setMaximumSize(QtCore.QSize(270, 400))
+        window.resize(270, 500)
+        window.setMinimumSize(QtCore.QSize(270, 500))
+        window.setMaximumSize(QtCore.QSize(270, 500))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icons/icons/favicon.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         window.setWindowIcon(icon)
         window.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         window.setStyleSheet("QMainWindow {\n"
                              "    background-color: #22222e;\n"
-                             "    font-family: \'Rubik\', sans-serif;\n"
+                             "    font-family: Rubik, sans-serif;\n"
                              "    color: white;\n"
                              "}\n"
                              "\n"
@@ -37,9 +40,27 @@ class UiSettingsNames(object):
                              "    border-radius: 8px;\n"
                              "    color: white;\n"
                              "    font-weight: 800;\n"
+                             "}"
+                             "\n"
+                             "QPushButton {\n"
+                             "    color: white;\n"
+                             "    background-color: #fb5b5d;\n"
+                             "    border-radius: 10px;\n"
+                             "}\n"
+                             "\n"
+                             "QPushButton:pressed {\n"
+                             "    background-color: #fa4244;\n"
                              "}")
         self.centralwidget = QtWidgets.QWidget(window)
         self.centralwidget.setObjectName("centralwidget")
+        self.btn_entry = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_entry.setGeometry(QtCore.QRect(95, 475, 75, 20))
+        font = QtGui.QFont()
+        font.setFamily("Rubik")
+        font.setBold(True)
+        font.setWeight(75)
+        self.btn_entry.setFont(font)
+        self.btn_entry.setObjectName("pushButton")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.verticalLayout = QtWidgets.QVBoxLayout()
@@ -104,7 +125,7 @@ class UiSettingsNames(object):
         self.le_8 = QtWidgets.QLineEdit(self.centralwidget)
         self.le_8.setMinimumSize(QtCore.QSize(250, 25))
         self.le_8.setMaximumSize(QtCore.QSize(250, 25))
-        self.le_8.setMaxLength(50)
+        self.le_8.setMaxLength(16)
         self.le_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.le_8.setObjectName("le_8")
         self.verticalLayout.addWidget(self.le_8)
@@ -119,11 +140,21 @@ class UiSettingsNames(object):
         window.setCentralWidget(self.centralwidget)
 
         self.retranslate_ui(window)
+
+        self.btn_entry.clicked.connect(self.change)  # type: ignore
+
         QtCore.QMetaObject.connectSlotsByName(window)
 
     def retranslate_ui(self, window):
-        cfg = ZoomPlusConfig()
         _translate = QtCore.QCoreApplication.translate
-        for ind, le in enumerate(cfg.main_le):
-            getattr(self, le).setPlaceholderText(cfg.get_name_conf(ind))
+        self.btn_entry.setText(_translate("Zoom Plus", 'Save'))
+        self.btn_entry.setShortcut(_translate('Zoom Plus', "Return"))
+        for ind, le in enumerate(self.cfg.main_le):
+            getattr(self, le).setPlaceholderText(self.cfg.get_name_conf(ind))
         window.setWindowTitle(_translate("ZoomPlus", "Настройка названий конференций"))
+
+    def change(self):
+        for ind, le in enumerate(self.cfg.main_le):
+            text = getattr(self, le).text()
+            if text:
+                self.cfg.set_name_conf(text, ind)
