@@ -23,7 +23,7 @@ class UiSettingsUrls(object):
         window.setMinimumSize(QtCore.QSize(270, 430))
         window.setMaximumSize(QtCore.QSize(270, 430))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icons/icons/favicon.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap(r"C:\Users\Ryzen\PycharmProjects\zoomplus\icons\favicon.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         window.setWindowIcon(icon)
         window.setStyleSheet("QMainWindow {\n"
                              "    background-color: #22222e;\n"
@@ -84,6 +84,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_0.setMaxLength(125)
         self.le_0.setObjectName("le_0")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_0)
         self.lbl_1 = QtWidgets.QLabel(self.centralwidget)
@@ -94,6 +95,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_1.setMaxLength(125)
         self.le_1.setObjectName("le_1")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_1)
         self.lbl_2 = QtWidgets.QLabel(self.centralwidget)
@@ -104,6 +106,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_2.setMaxLength(125)
         self.le_2.setObjectName("le_2")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_2)
         self.lbl_3 = QtWidgets.QLabel(self.centralwidget)
@@ -114,6 +117,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_3.setMaxLength(125)
         self.le_3.setObjectName("le_3")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_3)
         self.lbl_4 = QtWidgets.QLabel(self.centralwidget)
@@ -124,6 +128,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_4.setMaxLength(125)
         self.le_4.setObjectName("le_4")
         self.formLayout.setWidget(4, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_4)
         self.lbl_5 = QtWidgets.QLabel(self.centralwidget)
@@ -134,6 +139,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_5.setMaxLength(125)
         self.le_5.setObjectName("le_5")
         self.formLayout.setWidget(5, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_5)
         self.lbl_6 = QtWidgets.QLabel(self.centralwidget)
@@ -144,6 +150,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_6.setMaxLength(125)
         self.le_6.setObjectName("le_6")
         self.formLayout.setWidget(6, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_6)
         self.lbl_7 = QtWidgets.QLabel(self.centralwidget)
@@ -154,6 +161,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_7.setMaxLength(125)
         self.le_7.setObjectName("le_7")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_7)
         self.lbl_8 = QtWidgets.QLabel(self.centralwidget)
@@ -164,6 +172,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_8.setMaxLength(125)
         self.le_8.setObjectName("le_8")
         self.formLayout.setWidget(8, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_8)
         self.lbl_9 = QtWidgets.QLabel(self.centralwidget)
@@ -174,6 +183,7 @@ class UiSettingsUrls(object):
             QtCore.Qt.AlignmentFlag.AlignRight |
             QtCore.Qt.AlignmentFlag.AlignTrailing |
             QtCore.Qt.AlignmentFlag.AlignVCenter)
+        self.le_9.setMaxLength(125)
         self.le_9.setObjectName("le_9")
         self.formLayout.setWidget(9, QtWidgets.QFormLayout.ItemRole.FieldRole, self.le_9)
         self.verticalLayout.addLayout(self.formLayout)

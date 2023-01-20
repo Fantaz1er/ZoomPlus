@@ -23,7 +23,7 @@ class UiSettingsNames(object):
         window.setMinimumSize(QtCore.QSize(270, 500))
         window.setMaximumSize(QtCore.QSize(270, 500))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icons/icons/favicon.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap(r"C:\Users\Ryzen\PycharmProjects\zoomplus\icons\favicon.ico"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         window.setWindowIcon(icon)
         window.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
         window.setStyleSheet("QMainWindow {\n"

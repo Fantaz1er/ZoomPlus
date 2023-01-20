@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icons">
-    <file>icons/favicon.ico</file>
+    <file>C:\Users\Ryzen\PycharmProjects\zoomplus\icons\reset.png</file>
+    <file>C:\Users\Ryzen\PycharmProjects\zoomplus\icons\favicon.ico</file>
   </qresource>
 </RCC>
