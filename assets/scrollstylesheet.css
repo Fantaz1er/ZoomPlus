@@ -1,16 +1,11 @@
+QWidget {
+    background-color: #22222e;
+    border: none;
+}
+
 QMainWindow {
     font-family: Rubik, sans-serif;
     background-color: #22222e;
-}
-
-QLineEdit {
-    font-family: Rubik, sans-serif;
-    background-color: #22222e;
-    border: 2px solid #f66867;
-    border-radius: 6px;
-    color: white;
-    font-size: 12pt;
-    font-weight: 600;
 }
 
 QPushButton {
@@ -18,7 +13,7 @@ QPushButton {
     font-family: Rubik, sans-serif;
     background-color: #fb5b5d;
     border-radius: 6px;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: 600;
 }
 

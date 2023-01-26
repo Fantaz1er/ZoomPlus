@@ -1,11 +1,11 @@
-from pycode_ui.zoomplus_namesui import *
+from pycode_ui.zoomplus_recoverui import *
 
 
-class NamesWindow(QtWidgets.QMainWindow):
+class RecoverWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.ui = UiSettingsNames()
+        self.ui = UiRecover()
         self.ui.setup_ui(self)
 
         QtGui.QFontDatabase.addApplicationFont('../assets/fonts/Rubik-Regular.ttf')

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Recover</class>
+ <widget class="QMainWindow" name="Recover">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>240</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>240</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Восстановление конференций</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../qrc/files.qrc">
+    <normaloff>:/icons/C:/Users/Ryzen/PycharmProjects/zoomplus/icons/favicon.ico</normaloff>:/icons/C:/Users/Ryzen/PycharmProjects/zoomplus/icons/favicon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #22222e
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+    border: none;
+    background-color: #22222e;
+    color: white
+}
+
+QMainWindow {
+    font-family: Rubik, sans-serif;
+    background-color: #22222e;
+}
+
+QLineEdit {
+    font-family: Rubik, sans-serif;
+    background-color: #22222e;
+    border: 2px solid #f66867;
+    border-radius: 6px;
+    color: white;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+QPushButton {
+    color: white;
+    font-family: Rubik, sans-serif;
+    background-color: #fb5b5d;
+    border-radius: 6px;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+QPushButton:pressed {
+    background-color: #fa4244;
+}
+
+QLabel {
+    font-family: Rubik, sans-serif;
+    color: white;
+    font-size: 10pt;
+    font-weight: 600;
+}
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>222</width>
+         <height>302</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="btn_0">
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../qrc/files.qrc"/>
+ </resources>
+ <connections/>
+</ui>
